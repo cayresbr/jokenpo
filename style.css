@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("https://picsum.photos/seed/nature2/1600/900");
+  background-image: url(assets/bg.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background-color: rgba(223, 221, 221, 0.5);;
+  background-color: rgba(223, 221, 221, 0.5);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -69,4 +69,15 @@ p {
 
 .ia-score span {
   color: rgb(52, 180, 52);
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: black;
+  }
+
+  button {
+    font-size: 30px;
+    padding: 8px;
+  }
 }
