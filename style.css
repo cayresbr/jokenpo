@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://picsum.photos/seed/nature2/1600/900");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(223, 221, 221, 0.5);;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.buttons {
+  margin: 30px 0;
+  display: flex;
+  gap: 40px;
+}
+
+button {
+padding: 10px;
+font-size: 50px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+#rock {
+  background-color: #CFCFCF;
+}
+
+#paper {
+  background-color: #A7D8FF;
+}
+
+#scissor {
+  background-color: #FFD6A5;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.your-score span {
+  color: rgb(63, 63, 241);
+}
+
+.ia-score span {
+  color: rgb(52, 180, 52);
+}
