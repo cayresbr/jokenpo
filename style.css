@@ -5,6 +5,7 @@
 }
 
 body {
+  /* background-color: black; */
   background-image: url(assets/bg.jpg);
   background-size: cover;
   display: flex;
@@ -73,7 +74,10 @@ p {
 
 @media (max-width: 400px) {
   body {
-    background-color: black;
+    background: url('assets/bg-resp.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   button {
