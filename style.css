@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  background-color: rgba(223, 221, 221, 0.5);
+  background-color: rgba(223, 221, 221, 0.63);
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -26,7 +26,36 @@ body {
 
 h1 {
   font-size: 3rem;
-}
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 15s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { background-position: 200% 50%; }
+      100% { background-position: 0% 50%; }
+    }
 
 .buttons {
   margin: 30px 0;
@@ -48,7 +77,7 @@ button:hover {
 }
 
 #rock {
-  background-color: #CFCFCF;
+  background-color: #7e7c7c;
 }
 
 #paper {
@@ -64,12 +93,16 @@ p {
   font-size: 2rem;
 }
 
-.your-score span {
+#your-score {
   color: rgb(63, 63, 241);
 }
 
-.ia-score span {
+#ia-score {
   color: rgb(52, 180, 52);
+}
+
+#empates {
+  color: rgb(236, 56, 56);
 }
 
 @media (max-width: 431px) {
