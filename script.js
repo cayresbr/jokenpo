@@ -7,12 +7,18 @@ let yourScoreNumber = 0;
 let iaScoreNumber = 0;
 let empateNumber = 0;
 
+const GAME_OPTION = {
+  ROCK: 'rock',
+  PAPER: 'paper',
+  SCISSOR: 'scissor'
+}
+
 const playHuman = (humanChoice) => {
   playTheGame(humanChoice, playIa());
 };
 
 const playIa = () => {
-  const choices = ["rock", "paper", "scissor"];
+  const choices = [GAME_OPTION.ROCK, GAME_OPTION.PAPER, GAME_OPTION.SCISSOR];
   const randomNumber = Math.floor(Math.random() * 3);
 
   return choices[randomNumber];
@@ -24,9 +30,9 @@ const playTheGame = (human, ia) => {
     empate.innerHTML = empateNumber;
     result.innerHTML = "Deu empate!";
   } else if (
-    (human === "rock" && ia === "scissor") ||
-    (human === "paper" && ia === "rock") ||
-    (human === "scissor" && ia === "paper")
+    (human === GAME_OPTION.ROCK && ia === GAME_OPTION.SCISSOR) ||
+    (human === GAME_OPTION.PAPER && ia === GAME_OPTION.ROCK) ||
+    (human === GAME_OPTION.SCISSOR && ia === GAME_OPTION.PAPER)
   ) {
     yourScoreNumber++;
     yourScore.innerHTML = yourScoreNumber;
